@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="role_options" >
+        <item>Select a role</item>
+        <item>Admin</item>
+        <item>Customer</item>
+    </string-array>
+    <string-array name="books_categories">
+        <item>Select Book Categories</item>
+        <item>History</item>
+        <item>Fantasy</item>
+        <item>Thriller</item>
+        <item>Romance</item>
+        <item>Mystry</item>
+        <item>Childrens</item>
+        <item>Biograpy</item>
+        <item>Science Fition</item>
+
+    </string-array>
+</resources>

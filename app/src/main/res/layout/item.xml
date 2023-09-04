@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="16dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/background02"
+        android:layout_height="530dp">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/recImage"
+            android:src="@drawable/va_add"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/roundedImageViewRounded"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/recTitle"
+            android:text="Title"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@id/recImage"/>
+
+
+        <TextView
+            android:id="@+id/recauthor"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="100dp"
+            android:text="Author"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/recisbn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_below="@id/recauthor"
+            android:layout_marginStart="-61dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"
+            android:layout_toEndOf="@id/recImage"
+            android:maxLines="1"
+            android:text="ISBN"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/recprice"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/recisbn"
+            android:layout_marginStart="-60dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"
+            android:layout_toEndOf="@id/recImage"
+            android:text="price"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/recquntity"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_below="@id/recprice"
+            android:layout_marginStart="-60dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"
+            android:layout_toEndOf="@id/recImage"
+            android:text="quntity"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/recdescription"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/recquntity"
+            android:layout_marginStart="-60dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"
+            android:layout_toEndOf="@id/recImage"
+            android:text="description"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+
+        <Button
+                android:id="@+id/btnedit"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="400dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/button"
+                android:text="Edit"
+                android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btndelete"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="230dp"
+            android:layout_marginTop="400dp"
+            android:background="@drawable/button"
+            android:text="Delete"
+
+            android:textAllCaps="false" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
