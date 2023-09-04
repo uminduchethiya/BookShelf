@@ -1,9 +1,151 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home">
+    android:background="#ffffff">
+
+  <!-- Removed unused ScrollView attributes -->
+  <ScrollView
+      android:id="@+id/scrollView3"
+      android:layout_width="0dp"
+      android:layout_height="320dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+      <!-- Corrected ImageView dimensions and removed duplicate IDs -->
+
+      <TextView
+          android:id="@+id/imageView5"
+          android:layout_width="match_parent"
+          android:layout_height="250dp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          android:background="@drawable/customerbackground2" />
+
+
+
+      <ImageView
+          android:id="@+id/imageView6"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.5"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="@+id/imageView5"
+           />
+
+      <EditText
+          android:id="@+id/editTextTextPersonName2"
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:layout_marginStart="32dp"
+          android:layout_marginEnd="32dp"
+          android:background="@drawable/forget"
+          android:drawableEnd="@drawable/vt_search"
+          android:elevation="3dp"
+          android:ems="10"
+          android:gravity="center"
+          android:hint="searching for..."
+          android:inputType="textPersonName"
+          android:padding="8dp"
+          android:textColorHint="#7a7a7a"
+          android:textStyle="italic"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+      <!-- Removed duplicate IDs and corrected background attribute -->
+
+      <!-- ... Rest of your layout ... -->
+
+    </LinearLayout>
+  </ScrollView>
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/cardCloudSync"
+      android:layout_width="409dp"
+      android:layout_height="312dp"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginTop="24dp"
+      app:cardCornerRadius="8dp"
+      app:cardElevation="8dp"
+      app:cardUseCompatPadding="true"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/scrollView3">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical">
+
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/baseline_cloud_sync" />
+
+    </LinearLayout>
+  </androidx.cardview.widget.CardView>
+
+  <com.google.android.material.bottomappbar.BottomAppBar
+      android:id="@+id/bottomAppBar"
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:layout_gravity="bottom"
+      android:backgroundTint="#3054a8"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:srcCompat="@drawable/vt_search">
+
+    <!-- ... BottomAppBar contents ... -->
+
+    <ImageView
+        android:id="@+id/appbarimage01"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+         android:layout_marginLeft="30dp"
+        android:src="@drawable/baseline_home_24" />
+
+
+
+    <ImageView
+        android:id="@+id/appbarimagecart"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="60dp"
+        android:src="@drawable/vt_cart" />
+    <ImageView
+        android:id="@+id/appimagecategori"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="70dp"
+        android:src="@drawable/vt_category" />
+
+    <ImageView
+        android:id="@+id/appbarimagemenu"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="50dp"
+        android:src="@drawable/baseline_menu_24" />
+
+
+  </com.google.android.material.bottomappbar.BottomAppBar>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
