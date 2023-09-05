@@ -44,7 +44,7 @@ public class Login extends AppCompatActivity {
                             Intent intentAdmin = new Intent(getApplicationContext(),AdminPanel.class);
                             startActivity(intentAdmin);
                         } else if (UserRoleResult.equals("Customer")) {
-                            Intent intentCustomer = new Intent(getApplicationContext(),Home.class);
+                            Intent intentCustomer = new Intent(getApplicationContext(),User_home.class);
                             startActivity(intentCustomer);
                         }
 

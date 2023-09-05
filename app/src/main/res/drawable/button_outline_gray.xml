@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="ExtraText">
+    <solid android:color="@android:color/transparent" /> <!-- Transparent background -->
+    <stroke
+        android:width="2dp"
+        android:color="@color/white" /> <!-- Gray outline color (#808080 is a shade of gray) -->
+    <corners android:radius="4dp" /> <!-- Optional: Round the corners if needed -->
+</shape>
